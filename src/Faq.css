@@ -1,0 +1,140 @@
+/* FAQPage.css */
+
+.faq-page-container {
+  min-height: 70rem;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 16px;
+  background-color: #fff;
+  /* margin-bottom: 1rem; */
+}
+@media (max-width: 768px) {
+  .faq-page-container {
+    margin-bottom: 0;
+  }
+}
+
+.faq-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 1600px;
+  width: 100%;
+  background: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .faq-card {
+    flex-direction: row;
+    font-size: "";
+    font-size: 14px;
+  }
+}
+
+.faq-section {
+  flex: 2;
+  padding: 24px;
+}
+
+.faq-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.faq-question {
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.faq-question:hover {
+  background: #f9fafb;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  /* transition: max-height 0.3s, opacity 0.3s; */
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out,
+    padding 0.3s ease-in-out;
+  padding: 0 16px;
+  font-size: 18px;
+  color: #6b7280;
+}
+
+.faq-answer.visible {
+  max-height: 200px;
+  opacity: 1;
+  padding-bottom: 12px;
+}
+
+.faq-answer.hidden {
+  opacity: 0;
+}
+
+.image-section {
+  flex: 1;
+  background: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.faq-image {
+  width: 80%;
+  height: auto;
+  border-radius: 12px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+/* Accent colors */
+.accent-blue {
+  color: #0dc7ae;
+  background: #eff6ff;
+  border-left: 4px solid #0dc7ae;
+}
+
+.accent-green {
+  color: #059669;
+  background: #ecfdf5;
+  border-left: 4px solid #10b981;
+}
+
+.accent-purple {
+  color: #7c3aed;
+  background: #f5f3ff;
+  border-left: 4px solid #8b5cf6;
+}
+
+.accent-red {
+  color: #dc2626;
+  background: #fef2f2;
+  border-left: 4px solid #ef4444;
+}
+
+.accent-indigo {
+  color: #4f46e5;
+  background: #eef2ff;
+  border-left: 4px solid #6366f1;
+}

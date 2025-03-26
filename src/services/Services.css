@@ -1,0 +1,221 @@
+.serviceHero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
+  height: 80vh;
+  background-color: #f3f3f3;
+  gap: 5rem;
+  margin-bottom: 7rem;
+  margin-top: 5rem;
+}
+.serviceGridContainer {
+  background-color: #fbfbfb;
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  margin: 0 auto;
+  width: 90%;
+  height: 83rem;
+  /* background-color: yellow; */
+  margin-bottom: 8rem;
+}
+.gridTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+}
+.gridArea {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+
+  /* background-color: blue; */
+}
+.appService {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  height: 330px;
+  width: 440px;
+  background-color: #f5f5f5;
+  border-radius: 2rem;
+}
+.appServiceTitleArea {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 3rem;
+  /* background-color: red; */
+}
+.appServiceDescriptionArea {
+  display: flex;
+  padding-left: 3rem;
+  /* background-color: blue; */
+}
+.imageGridContainer {
+  background-color: #fbfbfb;
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  margin: 0 auto;
+  width: 90%;
+  /* height: 50rem; */
+  height: auto;
+  /* background-color: yellow; */
+  margin-bottom: 50rem;
+}
+.imageService {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  height: 330px;
+  width: 350px;
+  background-color: #f5f5f5;
+  border-radius: 2rem;
+}
+.serviceImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+}
+.imageTitleArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* background-color: red; */
+}
+.serviceImage img {
+  height: 20rem;
+}
+
+@media (max-width: 1024px) {
+  .serviceHero {
+    gap: 2rem;
+    flex-direction: column;
+  }
+
+  .serviceGridContainer {
+    width: 95%;
+    height: auto;
+    margin-bottom: 5rem;
+  }
+
+  .gridArea {
+    gap: 2rem;
+  }
+
+  .appService {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .imageService {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .serviceImage img {
+    height: 18rem;
+  }
+}
+
+/* Responsive Design for Tablets */
+@media (max-width: 768px) {
+  /* Service Hero Section */
+  .serviceHero {
+    flex-direction: column; /* Stack elements vertically */
+    height: auto; /* Allow height to adjust based on content */
+    gap: 1.5rem;
+    padding: 0 1.5rem; /* Add horizontal padding */
+  }
+
+  /* Service Grid Container */
+  .serviceGridContainer {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5rem;
+  }
+
+  /* Grid Area */
+  .gridArea {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* App Service Cards */
+  .appService {
+    width: 100%; /* Full width on mobile */
+    height: auto; /* Adjust height based on content */
+    margin-bottom: 2rem;
+  }
+
+  /* Service Image Cards */
+  .imageService {
+    width: 100%; /* Full width on mobile */
+    height: auto; /* Adjust height based on content */
+    margin-bottom: 2rem;
+  }
+
+  /* Footer Section */
+  .serviceImage img {
+    height: 15rem; /* Adjust image size */
+  }
+
+  /* Title and Description Areas */
+  .appServiceTitleArea,
+  .appServiceDescriptionArea {
+    padding-left: 1rem; /* Less padding on mobile */
+    justify-content: center;
+  }
+
+  /* Remove excessive padding */
+  .gridTitle {
+    font-size: 1.5rem;
+  }
+}
+
+/* Mobile Specific Adjustments */
+@media (max-width: 480px) {
+  .serviceHero {
+    gap: 1rem;
+    padding: 0 10px; /* Add padding for smaller screens */
+  }
+
+  .gridTitle {
+    font-size: 1.2rem; /* Smaller text for mobile */
+  }
+
+  .appServiceTitleArea {
+    padding-left: 1rem; /* Adjust padding */
+  }
+
+  .appServiceDescriptionArea {
+    padding-left: 1rem; /* Adjust padding */
+  }
+
+  .serviceImage img {
+    height: 12rem; /* Make images smaller on mobile */
+  }
+
+  .imageTitleArea {
+    font-size: 1rem;
+  }
+
+  .appService,
+  .imageService {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Center the serviceImage section */
+  .serviceImage {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

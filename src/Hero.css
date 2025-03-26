@@ -1,0 +1,50 @@
+.hero-container {
+  /* background-color: yellow; */
+  height: 60rem;
+  width: 160rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: end;
+  /* background-color: red; */
+}
+.hero-title {
+  display: inline-block;
+  font-size: 12rem;
+  font-weight: bold;
+  top: 8rem;
+  color: #333333;
+  z-index: 999;
+}
+.hero-description {
+  top: 8rem;
+  /* background-color: blue; */
+  font-size: 4rem;
+  left: 1rem;
+  bottom: 25rem;
+  color: #333333;
+}
+@media (max-width: 768px) {
+  .hero-container {
+    height: 46rem; /* Adjust height for smaller screens */
+    width: 100%; /* Full width */
+    margin-top: 1rem;
+    padding: 1rem; /* Add some padding for better spacing */
+    /* background-color: red; */
+  }
+
+  .hero-title {
+    font-size: 6rem; /* Smaller font size for mobile */
+    text-align: center; /* Center the title */
+    top: 4rem; /* Adjust vertical positioning */
+  }
+
+  .hero-description {
+    font-size: 2.5rem; /* Smaller font size for description */
+    left: 0;
+    bottom: 10rem; /* Adjust positioning */
+    text-align: center; /* Center the description */
+    margin: 0 auto; /* Ensure it's centered */
+  }
+}

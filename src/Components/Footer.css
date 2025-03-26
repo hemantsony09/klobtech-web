@@ -1,0 +1,125 @@
+.footerContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 0.4fr;
+  width: 95%;
+  height: 65vh;
+  margin: 0 auto;
+  background-color: #333;
+  /* position: relative; */
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  /* margin-bottom: 2rem; */
+  left: 4.5rem;
+  /* position: fixed; */
+  bottom: 0;
+  color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2);
+}
+.footerTitle {
+  display: flex;
+  font-size: 7rem;
+  /* background-color: #333; */
+  justify-content: center;
+  /* padding-right: ; */
+  align-items: center;
+  font-weight: 500;
+  color: #fff;
+}
+.footerArea {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* background-color: #333; */
+}
+/* .borderline {
+  height: 1rem;
+  width: 100vh;
+  background-color: #fff;
+  position: absolute;
+  top: 43%;
+  left: 40%;
+} 
+ .navigation {
+ background-color: yellow;
+}
+ */
+
+.navigation li {
+  font-size: 3rem;
+  color: #fff;
+  padding-left: 3rem;
+  transition: color ease 500ms;
+  cursor: pointer;
+}
+.navigation a {
+  font-size: 2.3rem;
+  padding-left: 3rem;
+}
+.navigation li:hover {
+  font-size: 3rem;
+  color: #099381;
+  padding-left: 3rem;
+}
+.contact {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  /* background-color: blue; */
+}
+.numbers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: red; */
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  padding-top: 4rem;
+  gap: 1rem;
+  justify-content: center;
+  /* background-color: yellow; */
+}
+.links img {
+  height: 5rem;
+}
+.address {
+  display: flex;
+  flex-direction: column;
+  padding-left: 55%;
+  /* background-color: red; */
+}
+
+.subHeader {
+  font-size: 3rem;
+  color: GREY;
+  font-weight: 500;
+}
+.numbers a {
+  font-size: 2rem !important;
+}
+#footer p {
+  color: #fff;
+  font-size: 2rem;
+}
+#footer p:hover {
+  color: #099381;
+  font-size: 2rem;
+}
+#footer a {
+  color: #fff;
+  transition: color ease 500ms;
+}
+#footer a:hover {
+  color: #099381;
+}
+.footerBottom {
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerBottom p {
+  color: #fff;
+  font-size: 1.5rem !important;
+}

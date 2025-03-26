@@ -1,0 +1,87 @@
+.box-1 input,
+.box-2 textarea,
+.box-1 select,
+.box-2 input{
+
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: solid 1px #292929;
+    border-radius: 0;
+    font-size: 20px;
+    resize: none;
+
+
+}
+.full-box{
+    overflow:hidden !important;
+}
+.box-1 label,
+.box-2 label{
+    font-size: 20px;
+    /* font-weight: 00; */
+    margin-top: 20px;
+}
+.box-1 button {
+    padding: 10px 20px;
+    background-color: #292929;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;   
+}
+
+input:focus-visible ,
+textarea:focus-visible, 
+select:focus-visible {
+    border: none ;
+    border-bottom: solid 1px #292929 ;
+    outline: none ;
+  }
+
+  .box-2 input::placeholder,
+    .box-2 textarea::placeholder 
+  {
+
+    color: #ffffff8a;
+  } 
+
+
+@media (max-width: 768px) {
+    .box-1 input,
+    .box-2 textarea,
+    .box-1 select,
+    .box-2 input {
+        font-size: 16px;
+    }
+    .box-2{
+        height: 1000px;
+        
+    }
+    .box-1 label,
+    .box-2 label {
+        font-size: 16px;
+    }
+    .full-box{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .btn {
+        padding-bottom: 60px;
+        width: 70%;
+        margin: 0 auto;
+       position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+    }
+    
+
+}
+

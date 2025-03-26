@@ -1,0 +1,313 @@
+/* Reset and base styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+} */
+
+.klobtech__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero section */
+.klobtech__hero {
+  background-color: #0dc7ae;
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+  border-radius: 3rem;
+  margin: 5rem;
+}
+
+.klobtech__hero-title {
+  font-size: 48px;
+  margin-bottom: 24px;
+  font-weight: bold;
+}
+
+.klobtech__hero-text {
+  font-size: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Stats section */
+.klobtech__stats {
+  padding: 64px 0;
+  background: white;
+}
+
+.klobtech__stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  text-align: center;
+}
+
+.klobtech__stats-item {
+  text-align: center;
+}
+
+.klobtech__stats-number {
+  font-size: 36px;
+  color: var(--accent-color);
+  margin-bottom: 8px;
+}
+
+/* About section */
+.klobtech__about {
+  padding: 64px 0;
+  background-color: #f8f9fa;
+}
+
+.klobtech__about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px;
+}
+
+.klobtech__section-title {
+  font-size: 32px;
+  margin-bottom: 24px;
+  font-weight: bold;
+}
+
+/* Services section */
+.klobtech__services {
+  padding: 64px 0;
+  background: white;
+  text-align: center;
+}
+
+.klobtech__services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.klobtech__service-card {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.klobtech__service-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.klobtech__service-icon {
+  font-size: 48px;
+  color: var(--accent-color);
+  margin-bottom: 16px;
+}
+
+.klobtech__service-title {
+  font-size: 24px;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+/* Technologies section */
+.klobtech__tech {
+  padding: 64px 0;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.klobtech__tech-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.klobtech__tech-item {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.klobtech__tech-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+  background-color: var(--accent-color);
+  color: white;
+}
+
+/* Contact section */
+.klobtech__contact {
+  padding: 64px 0;
+  background-color: var(--accent-color);
+  color: white;
+  text-align: center;
+}
+
+.klobtech__contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.klobtech__contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .klobtech__container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .klobtech__container {
+    max-width: 720px;
+  }
+
+  .klobtech__services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .klobtech__tech-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .klobtech__container {
+    max-width: 540px;
+  }
+
+  .klobtech__hero-title {
+    font-size: 36px;
+  }
+
+  .klobtech__hero-text {
+    font-size: 18px;
+  }
+
+  .klobtech__stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .klobtech__about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .klobtech__services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .klobtech__tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .klobtech__contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .klobtech__container {
+    padding: 0 16px;
+  }
+
+  .klobtech__hero-title {
+    font-size: 28px;
+  }
+
+  .klobtech__hero-text {
+    font-size: 16px;
+  }
+}
+
+/***************************************/
+/* About Section */
+.klobtech__about {
+  padding: 64px 0;
+  background-color: #f8f9fa;
+}
+
+.klobtech__about-item {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  margin-bottom: 48px;
+  transition: all 500ms ease;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+.klobtech__about-item:hover {
+  box-shadow: 0px 4px 6px 3px rgba(99, 99, 99, 0.37);
+}
+
+.klobtech__about-reverse {
+  flex-direction: row-reverse;
+}
+
+.klobtech__about-image {
+  width: 50%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.klobtech__about-text {
+  flex: 1;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.klobtech__section-title {
+  font-size: 32px;
+  margin-bottom: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+  .klobtech__about-item {
+    gap: 24px;
+  }
+
+  .klobtech__about-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .klobtech__about-item {
+    flex-direction: column;
+  }
+
+  .klobtech__about-reverse {
+    flex-direction: column;
+  }
+
+  .klobtech__about-image {
+    width: 100%;
+  }
+
+  .klobtech__about-text {
+    text-align: center;
+  }
+}
+
+/*********************************************/

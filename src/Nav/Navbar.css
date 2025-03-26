@@ -1,0 +1,226 @@
+.navbar {
+  border-radius: 2rem;
+  margin-top: 2rem;
+  top: 0;
+  opacity: 1;
+  /* left: 30%;
+  position: fixed; */
+  z-index: 9999;
+  background: rgba(244, 244, 244, 0.404);
+  backdrop-filter: blur(35px);
+  -webkit-backdrop-filter: blur(35px);
+  /* box-shadow: 0px 2px 6px 3px rgba(99, 99, 99, 0.37); */
+  max-width: 80rem;
+  height: 48px;
+  /* background-color: red; */
+  margin-bottom: 3rem;
+}
+
+.navbar-container {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 15px;
+  /* background-color: yellow; */
+  border-radius: 3rem;
+  backdrop-filter: blur(35px);
+  -webkit-backdrop-filter: blur(35px);
+  width: 80rem;
+}
+@media (max-width: 768px) {
+  .navbar-container {
+    justify-content: right;
+    padding-right: 5rem;
+    height: auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+.navbar-content {
+  display: flex;
+  justify-content: center;
+  height: 32px;
+  align-items: center;
+  /* background-color: red; */
+}
+
+.desktop-navigation {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    width: "";
+  }
+  .desktop-navigation {
+    display: block;
+  }
+
+  .desktop-nav-items {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .nav-link {
+    color: #333333;
+    text-decoration: none;
+    padding: 12px;
+    font-size: 20px;
+    font-weight: 500;
+    transition: color 0.15s ease;
+  }
+
+  .nav-link:hover {
+    color: #25ccb6;
+  }
+
+  .services-dropdown {
+    position: relative;
+  }
+
+  .services-dropdown-trigger {
+    color: #333333;
+    background: none;
+    border: none;
+    padding: 12px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.15s ease;
+  }
+
+  .services-dropdown-trigger:hover,
+  .services-dropdown-trigger.active {
+    color: #25ccb6;
+  }
+
+  .services-dropdown-menu {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 23rem;
+    background-color: white;
+    border-radius: 2rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    z-index: 50;
+    opacity: 0;
+    transform: scale(0.95);
+    animation: fadeIn 0.2s ease-out forwards;
+  }
+
+  .services-dropdown-item {
+    position: relative;
+  }
+
+  .services-dropdown-link {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 8px 16px;
+    font-size: 16px;
+    color: #4a5568;
+    text-decoration: none;
+    transition: background-color 0.15s ease;
+    border-radius: 3rem;
+  }
+
+  .services-dropdown-link:hover {
+    background-color: #25ccb6;
+  }
+}
+
+.mobile-menu-toggle {
+  display: block;
+}
+/* 
+@media (max-width: 1024px) {
+  .navbar {
+    left: 0;
+    position: "";
+  }
+} */
+@media (min-width: 1024px) {
+  .mobile-menu-toggle {
+    display: none;
+  }
+}
+
+.mobile-menu-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 6px;
+  color: #4a5568;
+  background: none;
+  border: none;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.mobile-menu-button:hover {
+  color: #2b6cb0;
+  background-color: #f7fafc;
+}
+
+.screen-reader-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.mobile-menu-icon {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Mobile menu icon lines */
+.menu-icon-line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--accent-color);
+  transition: all 0.3s ease;
+}
+
+/* When the mobile menu is open, animate the lines into a cross */
+.menu-icon-line.rotate-down {
+  transform: rotate(45deg) translate(10px, 10px);
+}
+
+.menu-icon-line.hide {
+  opacity: 0;
+}
+
+.menu-icon-line.rotate-up {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Ensure both lines hide and animate into a complete cross */
+.menu-icon-line.rotate-up,
+.menu-icon-line.rotate-down {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

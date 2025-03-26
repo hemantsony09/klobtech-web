@@ -1,0 +1,122 @@
+/* General Styling */
+
+/* Body Background */
+.body-bg {
+  background-color: ;
+}
+/* .titleContainer {
+  margin-top: 150px;
+  display: flex;
+  height: 12rem;
+  align-items: center;
+  padding-left: 15rem;
+}
+.mainTitle {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #2a2a2a;
+  font-size: 8rem;
+}
+.secondaryTitle {
+  position: absolute;
+  left: 480px;
+  top: 2000px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #a3a3a3;
+  font-size: 5rem;
+  z-index: 99;
+} */
+
+/* Horizontal Scroll Carousel */
+.carousel-container {
+  position: relative;
+  height: 200vh;
+  background-color: var(--main-bg-color);
+  /* padding-left: 11rem;
+  padding-right: 15.5rem; */
+  margin-left: 15rem;
+  margin-right: 15rem;
+}
+
+.carousel-content {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.motion-div {
+  display: flex;
+  gap: 4rem;
+  padding: 0;
+}
+
+/* Card Styling */
+.card {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  gap: 4rem;
+  align-items: center;
+  position: relative;
+  height: 65rem;
+  width: 50rem;
+  overflow: hidden;
+  transition: scale ease 200ms;
+  background-color: #f4f4f4;
+  border-radius: 3rem;
+  color: #2a2a2a;
+}
+.card:hover {
+  scale: 1.04;
+}
+.descriptionContainer {
+  display: flex;
+  height: 350px;
+  width: 435px;
+  background-color: #fff;
+  border: 3px solid var(--accent-color);
+  font-size: 2rem;
+  border-radius: 2rem;
+  padding: 3rem;
+  text-wrap: pretty;
+  color: #333;
+}
+
+.card-background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  transition: transform 0.3s ease-in-out;
+  background-size: cover;
+  background-position: center;
+}
+
+.card:hover .card-background {
+  transform: scale(1.1);
+}
+
+.card-content {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  display: grid;
+  place-content: center;
+}
+
+.card-text {
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0)
+  );
+  padding: 32px;
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: white;
+  backdrop-filter: blur(10px);
+}

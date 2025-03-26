@@ -1,0 +1,239 @@
+.serviceHero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
+  min-height: 80vh;
+  height: auto; /* Adjust dynamically */
+    /* background-color: #fbfbfb; */
+  gap: 3rem;
+  /* margin-bottom: 7rem; */
+  border-radius: 3rem;
+}
+.mobileServiceGridContainer {
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  margin: 0 auto;
+  width: 90%;
+  height: 83rem;
+  background-color: #fbfbfb;
+  margin-bottom: 8rem;
+}
+.heroInfo {
+  display: flex;
+  height: 50rem;
+  width: 70rem;
+  flex-direction: column;
+  justify-content: start;
+  gap: 3rem;
+  align-items: center;
+  padding-top: 2rem;
+  /* background-color: red; */
+}
+.heroTitle {
+  font-size: 4rem;
+}
+.heroDescription {
+  font-size: 2.5rem;
+}
+
+.mobileGridArea {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+
+  /* background-color: blue; */
+}
+.gridTitleArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  font-size: 5rem;
+  font-weight: 600;
+}
+.mobilegridTitle {
+  font-size: 5rem;
+  font-weight: "600";
+}
+.appService {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  height: 330px;
+  width: 440px;
+  background-color: red;
+  border-radius: 2rem;
+  transition: box-shadow 500ms ease;
+}
+.appService:hover {
+  box-shadow: 0px 4px 6px 3px rgba(99, 99, 99, 0.37);
+}
+.serviceTitle {
+  font-size: 4rem;
+}
+.serviceGridTitleContainer {
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.appServiceTitleArea {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 3rem;
+  font-size: 3rem;
+  /* background-color: #25ccb6; */
+  border-radius: 3rem;
+  border-bottom: 4px solid #25ccb6;
+}
+.appServiceDescriptionArea {
+  display: flex;
+  padding-left: 3rem;
+  /* background-color: blue; */
+  width: auto;
+  font-size: 2rem;
+}
+.imageGridContainer {
+  background-color: #fbfbfb;
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  margin: 0 auto;
+  width: 90%;
+  height: 50rem;
+  /* background-color: yellow; */
+  margin-bottom: 50rem;
+  gap: 3rem;
+}
+.imageService {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  height: 330px;
+  width: 350px;
+  background-color: #fbfbfb;
+  border-radius: 2rem;
+}
+.serviceImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+}
+.imageTitleArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* background-color: red; */
+}
+.serviceImage img {
+  height: 20rem;
+}
+
+/* Responsive Design for Tablets */
+@media (max-width: 768px) {
+  /* Service Hero Section */
+  .serviceHero {
+    flex-direction: column; /* Stack elements vertically */
+    height: auto; /* Allow height to adjust based on content */
+    padding: 0 1.5rem; /* Add horizontal padding */
+    margin-top: 1rem;
+    height: 50rem;
+    /* background-color: red; */
+  }
+  .serviceHero img {
+    padding-top: 2rem;
+    height: 20rem;
+    /* background-color: red; */
+  }
+  .heroInfo {
+    height: rem;
+    width: auto;
+    /* background-color: red; */
+  }
+  .heroTitle {
+    font-size: 2.5rem;
+    font-weight: 500;
+    /* background-color: yellow; */
+  }
+  .heroDescription {
+    text-align: justify;
+    /* background-color: red; */
+    padding: 1rem;
+    font-size: 1.8rem;
+    height: 35rem;
+    /* border: 1px solid black; */
+    border-radius: 2rem;
+    background-color: #f5f5f7;
+  }
+  /* Service Grid Container */
+  .mobileServiceGridContainer {
+    width: 90%;
+    gap: 6rem;
+    height: 190rem;
+    /* margin-bottom: 5rem; */
+    /* background-color: green; */
+  }
+  .serviceGridTitleContainer {
+    height: 10rem;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .serviceTitle {
+    font-size: 2.8rem;
+    /* background-color: red; */
+    padding-top: 2rem;
+    font-weight: 500;
+  }
+  /* Grid Area */
+  .mobileGridArea {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* position: relative;
+    top: -30rem; */
+    /* background-color: blue; */
+    width: 90%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  /* App Service Cards */
+  .appService {
+    /* width: 95%; Full width on mobile */
+    /* height: auto; Adjust height based on content */
+    /* background-color: red; */
+    gap: 2rem;
+  }
+  .appServiceTitleArea {
+    font-size: 2rem;
+    font-weight: 500;
+    /* width: 95%; */
+  }
+  .mobileGridTitle {
+    /* background-color: red; */
+    font-size: 3rem;
+    font-weight: "600";
+  }
+  .gridTitleArea {
+    height: 10rem;
+  }
+  .mobileGridArea {
+    position: relative;
+    top: -7rem;
+    height: 80rem;
+    /* background-color: red; */
+  }
+  .mobileImageService {
+    background-color: #f5f5f5;
+    width: 22rem;
+  }
+  .imageGridContainer {
+    margin-bottom: 10rem;
+  }
+  /* Title and Description Areas */
+}
