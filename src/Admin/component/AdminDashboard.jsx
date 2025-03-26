@@ -20,7 +20,7 @@ import {
 } from "@mui/material";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import { useNavigate } from "react-router-dom";
-import '../../app.css';
+import './app.css';
 
 function AdminDashboard() {
   const [jobs, setJobs] = useState([
